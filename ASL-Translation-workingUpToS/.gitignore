@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.pyc
+venv/
+venv_asl/
+.venv/
+
+# Tests / tooling
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# IDE
+.vs/
+.vscode/
+.idea/
+
+# Generated artifacts (re-create with: python safe/pickle_data.py / python safe/train.py)
+*.pkl
+*.npy
+*.log
+*.pt
+!safe/best_asl_model.pt
+batch_sweep_results.json
+
+# Legacy files from the old NumPy network (not used by the current code)
+/trained_model.json
+# Old recordings: trained alone they only reach ~35% accuracy (bad/mislabeled data)
+/asl_dataset_flagged.csv
